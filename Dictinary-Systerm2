@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+
+// wenn wir  Nehmen  count fuction  dann benutzen  system.Linq Namespace
+namespace System.Linq
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Customer customer1 = new Customer()
+            {
+                ID = 101,
+                Name = "Makr",
+                Salary = 4500,
+            };
+            Customer customer2 = new Customer()
+            {
+                ID = 102,
+                Name = "Kumar",
+                Salary = 3000,
+            };
+            Customer customer3 = new Customer()
+            {
+                ID = 103,
+                Name = "Rosi",
+                Salary = 5000,
+            };
+            List<Customer> customers = new List<Customer>();
+            customers.Add(customer1);
+            customers.Add(customer2);
+            customers.Add(customer3);
+
+            Dictionary<string, Customer> dict = customers.ToDictionary(cust => cust.Name, cust => cust);
+            foreach (KeyValuePair<string, Customer> kvp in dict)
+            {
+                Console.WriteLine(" any Detail About the Customer: {0}", kvp.Key);
+                Customer cust = kvp.Value;
+                Console.WriteLine("ID = {0} Name : {1} Salary : {2}", cust.ID, cust.Name, cust.Salary);
+            }
+        }
+    }
+
+    public class Customer
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int Salary { get; set; }
+    }
+}
