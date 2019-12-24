@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Fahrzeuge Fahrzeuge1= new Fahrzeuge()  { Typs = "LKW", Brand = "BMW", Model = "Series-2" };
+            Fahrzeuge Fahrzeuge2 = new Fahrzeuge() { Typs = "PKW", Brand = "Benz", Model = "AMG-GT" };
+            Fahrzeuge Fahrzeuge3 = new Fahrzeuge() { Typs = "MTR", Brand = "Audi", Model = "CC-200" };
+            Fahrzeuge Fahrzeuge4 = new Fahrzeuge() { Typs = "LKW", Brand = "Albania", Model = "Series-2030" };
+            Fahrzeuge Fahrzeuge5 = new Fahrzeuge() { Typs = "PKW", Brand = "BMW", Model = "i3" };
+            Fahrzeuge Fahrzeuge6 = new Fahrzeuge() { Typs = "MTR", Brand = "Suzuki", Model = "YZ-400" };
+            Fahrzeuge Fahrzeuge7 = new Fahrzeuge() { Typs = "MTR", Brand = "Honda", Model = "CTR-150" };
+            Fahrzeuge Fahrzeuge8 = new Fahrzeuge() { Typs = "PKW", Brand = "Benz", Model = "C-Class" };
+            Fahrzeuge Fahrzeuge9 = new Fahrzeuge() { Typs = "LKW", Brand = "Benz", Model = "GT-250" };
+            Fahrzeuge Fahrzeuge10= new Fahrzeuge() { Typs = "LKW", Brand = "Fort", Model = "MF-900" };
+            
+
+            List<Fahrzeuge> FahrzeugeList = new List<Fahrzeuge>();
+            FahrzeugeList.Add(Fahrzeuge1);
+            FahrzeugeList.Add(Fahrzeuge2);
+            FahrzeugeList.Add(Fahrzeuge3);
+            FahrzeugeList.Add(Fahrzeuge4);
+            FahrzeugeList.Add(Fahrzeuge5);
+            FahrzeugeList.Add(Fahrzeuge6);
+            FahrzeugeList.Add(Fahrzeuge7);
+            FahrzeugeList.Add(Fahrzeuge8);
+            FahrzeugeList.Add(Fahrzeuge9);
+            FahrzeugeList.Add(Fahrzeuge10);
+
+
+            string UserChoice = string.Empty;
+            do
+            {
+                Console.WriteLine("Please enter the Fahrzeug Typs");
+                string strEnterCode = Console.ReadLine().ToUpper();
+                Fahrzeuge resulwagen= FahrzeugeList.Find(Fahrzeuge => Fahrzeuge.Typs == strEnterCode);
+
+                if (resulwagen == null)
+                {
+                    Console.WriteLine("in valied Choice.");
+                }
+
+                else
+                {
+                    Console.WriteLine("Your selected coutry  thoer capital of : {0} , {1} ", resulwagen.Brand, resulwagen.Typs, resulwagen.Model);
+                }
+                do
+                {
+                    Console.WriteLine("Do have Continue This Selection? YES OR NO");
+                    UserChoice = Console.ReadLine().ToUpper();
+
+                } while (UserChoice != "YES" && UserChoice != "NO");
+
+            } while (UserChoice == "YES");
+
+        }
+    }
+
+    public class Fahrzeuge
+    {
+        public string Brand { get; set; }
+        public string Typs { get; set; }
+        public string Model { get; set; }
+    }
+}
