@@ -1,0 +1,159 @@
+using System;
+using System.Collections.Generic;
+
+namespace System.Linq
+{
+    class Program
+    {
+        private static object bericht;
+
+        static void Main(string[] args)
+        {
+            List<Berichtet> berichtlist = new List<Berichtet>();
+            //Month January 2019 
+            // Erste Woche
+            berichtlist.Add(new Berichtet() { Datum = "02.01.2019", Monat = "januar.2019", Tag = "Mittwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "03.01.2019", Monat = "januar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "04.01.2019", Monat = "januar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Zweite Woche
+            berichtlist.Add(new Berichtet() { Datum = "07.01.2019", Monat = "januar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "08.01.2019", Monat = "januar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "09.01.2019", Monat = "januar.2019", Tag = "Mittwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "10.01.2019", Monat = "januar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "11.01.2019", Monat = "januar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weekend
+            //Threete woche
+            berichtlist.Add(new Berichtet() { Datum = "14.01.2019", Monat = "januar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "15.01.2019", Monat = "januar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "16.01.2019", Monat = "januar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "17.01.2019", Monat = "januar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "18.01.2019", Monat = "januar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weekend
+            //Vierte  woche
+            berichtlist.Add(new Berichtet() { Datum = "21.01.2019", Monat = "januar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "22.01.2019", Monat = "januar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "23.01.2019", Monat = "januar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "24.01.2019", Monat = "januar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "25.01.2019", Monat = "januar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weekend
+            //Funte Woche
+            berichtlist.Add(new Berichtet() { Datum = "28.01.2019", Monat = "januar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "29.01.2019", Monat = "januar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "30.01.2019", Monat = "januar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "31.01.2019", Monat = "januar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            //Month February 2019
+            //Weeekend
+            //Erste Woche
+            berichtlist.Add(new Berichtet() { Datum = "01.02.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Zweite Woche
+            berichtlist.Add(new Berichtet() { Datum = "04.02.2019", Monat = "februar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "05.02.2019", Monat = "februar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "06.02.2019", Monat = "februar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "07.02.2019", Monat = "februar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "08.02.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Thriete Woche
+            berichtlist.Add(new Berichtet() { Datum = "11.02.2019", Monat = "februar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "12.02.2019", Monat = "februar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "13.02.2019", Monat = "februar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "14.02.2019", Monat = "februar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "15.02.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Vierte Woche
+            berichtlist.Add(new Berichtet() { Datum = "18.02.2019", Monat = "februar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "19.02.2019", Monat = "februar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "20.02.2019", Monat = "februar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "21.02.2019", Monat = "februar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "22.02.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Funfte Woche
+            berichtlist.Add(new Berichtet() { Datum = "25.02.2019", Monat = "februar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "26.02.2019", Monat = "februar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "27.02.2019", Monat = "februar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "28.02.2019", Monat = "februar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            //Month March 2019
+            //Weeekend
+            //Erste Woche
+            berichtlist.Add(new Berichtet() { Datum = "01.03.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Zweite Woche
+            berichtlist.Add(new Berichtet() { Datum = "04.03.2019", Monat = "februar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "05.03.2019", Monat = "februar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "06.03.2019", Monat = "februar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "07.03.2019", Monat = "februar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "08.03.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Zweite Woche
+            berichtlist.Add(new Berichtet() { Datum = "11.03.2019", Monat = "februar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "12.03.2019", Monat = "februar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "13.03.2019", Monat = "februar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "14.03.2019", Monat = "februar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "15.03.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Thriete Woche
+            berichtlist.Add(new Berichtet() { Datum = "18.03.2019", Monat = "februar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "19.03.2019", Monat = "februar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "20.03.2019", Monat = "februar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "21.03.2019", Monat = "februar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "22.03.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            //Weeekend
+            //Vierte Woche
+            berichtlist.Add(new Berichtet() { Datum = "25.03.2019", Monat = "februar.2019", Tag = "Montag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "26.03.2019", Monat = "februar.2019", Tag = "Dienstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "27.03.2019", Monat = "februar.2019", Tag = "Mitwoch", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "28.03.2019", Monat = "februar.2019", Tag = "Donnerstag", Theman = "NoSubject" });
+            berichtlist.Add(new Berichtet() { Datum = "29.03.2019", Monat = "februar.2019", Tag = "Freitag", Theman = "NoSubject" });
+            string userchoice = string.Empty;
+            do
+            {
+                Console.WriteLine("Bitte Einträgen Sie, welche Monate überprüfen möchte ");
+                Console.WriteLine("Bitte Trägen Sie In dies Format");
+                Console.WriteLine("Monat in Schrieblich.Datum in Number");
+
+                string mon = Console.ReadLine().ToLower();
+                List<Berichtet> berichtets = berichtlist.FindAll(brt => brt.Monat == mon);
+
+                if (berichtets == null)
+                {
+                    Console.WriteLine("Sie habe Eingeträgen value, kann nich gefunden werden");
+                }
+                else
+                {
+                    foreach (Berichtet valuebricht in berichtets)
+                    {
+                        Console.WriteLine("Datum :{0},Monat: {1} Tag: {2}, Theman: {3}", valuebricht.Datum, valuebricht.Monat, valuebricht.Tag, valuebricht.Theman);
+                    }
+                }
+                string struserchoice = string.Empty;
+                do
+                {
+                    Console.WriteLine("Bitte Trägen Sie EinDeutlich Welche Datum zu Schauben");
+                    string Datum = Console.ReadLine();
+                    Berichtet perticularDatum = berichtets.Find(pdate => pdate.Datum == Datum);
+                    Console.WriteLine("Datum :{0},Monat: {1} Tag: {2}, Theman: {3}", perticularDatum.Datum, perticularDatum.Monat, perticularDatum.Tag, perticularDatum.Theman);
+                    Console.ReadLine().ToUpper();
+                } while (struserchoice != "No" && struserchoice != "YES");
+
+                Console.WriteLine(" Würden Sie gerne noch etwas anderen monat anschauen! Ja oder Nein");
+                    userchoice = Console.ReadLine().ToUpper();
+
+            } while (userchoice == "YES");
+        }
+    }
+
+
+    public class Berichtet
+    {
+        public string Datum { get; set; }
+        public string Monat { get; set; }
+        public string Theman { get; set; }
+        public string Tag { get; set; }
+
+        public override string ToString()
+        {
+            return this.Monat;
+        }
+    }
+}
